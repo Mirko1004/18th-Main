@@ -1,0 +1,182 @@
+name: todo_app_flutter
+description: A new Flutter application.
+
+
+
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.2
+  rxdart:
+  dots_indicator: ^1.0.0
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://www.dartlang.org/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - images/Shape.png
+    - images/Shape1.png
+    - images/Shape2.png
+    - images/Shape3.png
+    - images/back_arrow.png
+    - images/search.png
+    - images/location.png
+    - images/golfclub1.png
+    - images/star.png
+    - images/hole.png
+    - images/golf_club2.png
+    - images/golf.png
+    - images/tennis.png
+    - images/swimming.png
+    - images/fitness.png
+    - images/golf_club3.png
+    - images/golf_club4.png
+    - images/golf_club5.png
+    - images/mask.png
+    - images/slika30.png
+    - images/slika31.png
+    - images/slika32.png
+    - images/face.png
+    - images/line.png
+    - images/f.png
+    - images/In.png
+    - images/icon_google.png
+    - images/bar.png
+    - images/ring.png
+    - images/danny.png
+    - images/tritockice.png
+    - images/tigerwoods.png
+    - images/profile.png
+    - images/proShop.png
+    - images/play.png
+    - images/people.png
+    - images/home.png
+    - images/rightarrow.png
+    - images/layer.png
+    - images/heart.png
+    - images/sivatocka.png
+    - images/crnatocka.png
+    - images/heart2.png
+    - images/girl.png
+    - images/search2.png
+    - images/logo2.png
+    - images/statistika2.png
+    - images/statistika.png
+    - images/home2.png
+    - images/community2.png
+    - images/contacts.png
+    - images/facebook2.png
+    - images/Linkedin2.png
+    - images/profilePicture.png
+    - images/rightarrow2.png
+    - images/headIcon.png
+    - images/community10.png
+    - images/community11.png
+    - images/community12.png
+    - images/community13.png
+    - images/community14.png
+    - images/community15.png
+    - images/community16.png
+    - images/community17.png
+    - images/community18.png
+    - images/X.png
+    - images/location2.png
+    - images/golf10.png
+    - images/swimming10.png
+    - images/tennis10.png
+    - images/fitness10.png
+    - images/highlights2.png
+    - images/calendar.png
+    - images/highlights10.png
+    - images/highlights11.png
+    - images/@.png
+    - images/up_down_arrows.png
+    - images/beauty.png
+    - images/education.png
+    - images/finance.png
+    - images/health.png
+    - images/hospitality.png
+    - images/mining.png
+    - images/realestate.png
+    - images/sports.png
+    - images/technology.png
+    - images/travel.png
+    - images/driving_accuracy.png
+    - images/statistics_gir.png
+    - images/statistics_putting.png
+    - images/statistics_par.png
+    - images/statistics_recovery.png
+    - images/statistics_scoring.png
+    - images/background_image.png
+    - images/rings.png
+    - images/golf_flag.png
+    - images/right_arrow3.png
+
+
+
+
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.io/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.io/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Suranna-Regular
+      fonts:
+        - asset: fonts/Suranna-Regular.ttf
+
+
+
+
+
+#          weight: 400
+    - family: SFrancisco
+      fonts:
+        - asset: fonts/SFUIText-Light.ttf
+          weight: 300
+        - asset: fonts/SFUIText-Regular.ttf
+        - asset: fonts/SFUIText-Medium.ttf
+          weight: 500
+        - asset: fonts/SFUIText-Semibold.ttf
+          weight: 600
+#          weight: 300
+
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto-Light.ttf
+          weight: 300
+        - asset: fonts/Roboto-Medium.ttf
+
+
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.io/custom-fonts/#from-packages
