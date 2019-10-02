@@ -23,7 +23,7 @@ phoneContacts() {
               child: ListTile(
             contentPadding: EdgeInsets.only(left: 20.0, right: 20.0, top: 5.0),
             title: Text('phone contacts', style: AppStyles.getSFUITextLight()),
-            trailing: _Contacts(),
+            trailing: Image.asset('images/contacts.png'),
           )),
         ),
       ),
@@ -45,7 +45,7 @@ phoneContacts() {
               child: ListTile(
             contentPadding: EdgeInsets.only(left: 20.0, right: 20.0, top: 5.0),
             title: Text('facebook', style: AppStyles.getSFUITextLight()),
-            trailing: _Facebook(),
+            trailing: Image.asset('images/facebook2.png'),
           )),
         ),
       ),
@@ -67,7 +67,7 @@ phoneContacts() {
               child: ListTile(
             contentPadding: EdgeInsets.only(left: 20.0, right: 20.0, top: 5.0),
             title: Text('linkedin', style: AppStyles.getSFUITextLight()),
-            trailing: _LinkedIn(),
+            trailing: Image.asset('images/Linkedin2.png'),
           )),
         ),
       ),
@@ -90,34 +90,10 @@ phoneContacts() {
             contentPadding: EdgeInsets.only(left: 20.0, right: 20.0, top: 5.0),
             title: Text('search the community',
                 style: AppStyles.getSFUITextLight()),
-            trailing: _HeadIcon(),
+            trailing: Image.asset('images/headIcon.png'),
           )),
         ),
       ),
     ],
   );
-}
-
-_Contacts() {
-  AssetImage assetImage = AssetImage('images/contacts.png');
-  Image image = Image(image: assetImage);
-  return image;
-}
-
-_Facebook() {
-  AssetImage assetImage = AssetImage('images/facebook2.png');
-  Image image = Image(image: assetImage);
-  return image;
-}
-
-_LinkedIn() {
-  AssetImage assetImage = AssetImage('images/Linkedin2.png');
-  Image image = Image(image: assetImage);
-  return image;
-}
-
-_HeadIcon() {
-  AssetImage assetImage = AssetImage('images/headIcon.png');
-  Image image = Image(image: assetImage);
-  return image;
 }

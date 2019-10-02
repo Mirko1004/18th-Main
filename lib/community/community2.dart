@@ -2,24 +2,13 @@ import 'package:flutter/material.dart';
 import 'rsvpRow.dart';
 import 'package:todo_app_flutter/utils/app_colors.dart';
 import '../utils/app_styles.dart';
+import 'package:todo_app_flutter/community/common/community_app_bar.dart';
 
 class Community2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        title: Padding(
-          padding: EdgeInsets.only(left: 60.0),
-          child: Text('COMMUNITY',
-              style:
-                  AppStyles.getSurannaStyle(24.0, 0.0, AppColors.blackColor)),
-        ),
-        leading: _Bar(),
-        actions: <Widget>[
-          _Search2(),
-        ],
-      ),
+      appBar: getCommunityAppBar(context, ''),
       body: Container(
         color: Colors.white,
         child: SingleChildScrollView(
@@ -124,22 +113,4 @@ class Community2 extends StatelessWidget {
       ),
     );
   }
-}
-
-_Bar() {
-  AssetImage assetImage = AssetImage('images/bar.png');
-  Image image = Image(image: assetImage);
-  return image;
-}
-
-_Search2() {
-  AssetImage assetImage = AssetImage('images/search2.png');
-  Image image = Image(image: assetImage);
-  return image;
-}
-
-_RightArrow2() {
-  AssetImage assetImage = AssetImage('images/rightarrow2.png');
-  Image image = Image(image: assetImage);
-  return image;
 }

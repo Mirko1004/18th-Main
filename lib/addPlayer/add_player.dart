@@ -8,11 +8,13 @@ class AddPlayers extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
-        title: Text('ADD PLAYER',
-            style: AppStyles.getSurannaStyle(24.0, 0.0, AppColors.blackColor)),
-        leading: _BackArrow(),
-      ),
+          backgroundColor: Colors.white,
+          title: Text('ADD PLAYER',
+              style:
+                  AppStyles.getSurannaStyle(24.0, 0.0, AppColors.blackColor)),
+          leading: Image(
+            image: AssetImage('images/back_arrow.png'),
+          )),
       body: Container(
         height: 600.0,
         padding: EdgeInsets.only(left: 20.0, right: 20.0, top: 30.0),
@@ -58,12 +60,14 @@ class AddPlayers extends StatelessWidget {
                   ),
                   child: Card(
                       child: ListTile(
-                    contentPadding: EdgeInsets.only(left: 20.0, right: 20.0),
-                    title: Text('send email invitations',
-                        textAlign: TextAlign.justify,
-                        style: AppStyles.getSFUITextLight()),
-                    trailing: _monkey(),
-                  )),
+                          contentPadding:
+                              EdgeInsets.only(left: 20.0, right: 20.0),
+                          title: Text('send email invitationss',
+                              textAlign: TextAlign.justify,
+                              style: AppStyles.getSFUITextLight()),
+                          trailing: Image(
+                            image: AssetImage('images/@.png'),
+                          ))),
                 ),
               ),
               AddPlayerRow(),
@@ -73,16 +77,4 @@ class AddPlayers extends StatelessWidget {
       ),
     );
   }
-}
-
-_BackArrow() {
-  AssetImage assetImage = AssetImage('images/back_arrow.png');
-  Image image = Image(image: assetImage);
-  return image;
-}
-
-_monkey() {
-  AssetImage assetImage = AssetImage('images/@.png');
-  Image image = Image(image: assetImage);
-  return image;
 }

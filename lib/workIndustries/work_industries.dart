@@ -53,7 +53,7 @@ class WorkIndustries extends StatelessWidget {
                     ),
                     child: Card(
                         child: ListTile(
-                      contentPadding: EdgeInsets.only(left: 20.0, right: 20.0),
+                      contentPadding: EdgeInsets.only(left: 15.0, right: 15.0),
                       title: Text('select the industry you worked in',
                           style: AppStyles.getSFUITextLight()),
                       trailing: _UpDownArrows(),

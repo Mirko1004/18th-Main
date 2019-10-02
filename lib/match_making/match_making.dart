@@ -8,13 +8,15 @@ class MatchMaking extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        title: Text(
-          'MATCH - MAKING',
-          style: AppStyles.getSurannaStyle(24.0, 0.0, AppColors.blackColor),
-        ),
-        leading: _BackArrow(),
-      ),
+          titleSpacing: 0.0,
+          backgroundColor: Colors.transparent,
+          title: Text(
+            'MATCH-MAKING',
+            style: AppStyles.getSurannaStyle(24.0, 0.0, AppColors.blackColor),
+          ),
+          leading: Image(
+            image: AssetImage('images/back_arrow.png'),
+          )),
       body: Container(
         child: Stack(
           children: <Widget>[
@@ -33,7 +35,7 @@ class MatchMaking extends StatelessWidget {
               child: Text(
                 'CONNECT. INTERACT ',
                 style:
-                AppStyles.getSurannaStyle(28.0, 1.0, AppColors.orangeColor),
+                    AppStyles.getSurannaStyle(28.0, 1.0, AppColors.orangeColor),
               ),
             ),
             Positioned(
@@ -43,7 +45,7 @@ class MatchMaking extends StatelessWidget {
               child: Text(
                 '& PLAY',
                 style:
-                AppStyles.getSurannaStyle(28.0, 1.0, AppColors.orangeColor),
+                    AppStyles.getSurannaStyle(28.0, 1.0, AppColors.orangeColor),
               ),
             ),
             Positioned(
@@ -93,10 +95,4 @@ class MatchMaking extends StatelessWidget {
       ),
     );
   }
-}
-
-_BackArrow() {
-  AssetImage assetImage = AssetImage('images/back_arrow.png');
-  Image image = Image(image: assetImage);
-  return image;
 }

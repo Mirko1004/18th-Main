@@ -7,11 +7,13 @@ class GameRules extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
-        title: Text('GAME RULES',
-            style: AppStyles.getSurannaStyle(24.0, 0.0, AppColors.blackColor)),
-        leading: _X(),
-      ),
+          backgroundColor: Colors.white,
+          title: Text('GAME RULES',
+              style:
+                  AppStyles.getSurannaStyle(24.0, 0.0, AppColors.blackColor)),
+          leading: Image(
+            image: AssetImage('assets/images/X.png'),
+          )),
       body: SingleChildScrollView(
         child: Padding(
             padding: EdgeInsets.only(left: 30.0, right: 30.0, top: 40.0),
@@ -103,10 +105,4 @@ class GameRules extends StatelessWidget {
       ),
     );
   }
-}
-
-_X() {
-  AssetImage assetImage = AssetImage('images/X.png');
-  Image image = Image(image: assetImage);
-  return image;
 }

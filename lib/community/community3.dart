@@ -1,24 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app_flutter/utils/app_colors.dart';
 import '../utils/app_styles.dart';
+import 'package:todo_app_flutter/community/common/community_app_bar.dart';
 
 class Community3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        title: Padding(
-          padding: EdgeInsets.only(left: 60.0),
-          child: Text('COMMUNITY',
-              style:
-                  AppStyles.getSurannaStyle(24.0, 0.0, AppColors.blackColor)),
-        ),
-        leading: _Bar(),
-        actions: <Widget>[
-          _Search2(),
-        ],
-      ),
+      appBar: getCommunityAppBar(context, ''),
       body: Container(
         color: Colors.white,
         child: SingleChildScrollView(
@@ -92,8 +81,8 @@ class Community3 extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
-                        _Community10(),
-                        _Community11(),
+                        Image.asset('images/community10.png'),
+                        Image.asset('images/community11.png'),
                       ],
                     ),
                     SizedBox(
@@ -102,8 +91,8 @@ class Community3 extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
-                        _Community12(),
-                        _Community13(),
+                        Image.asset('images/community12.png'),
+                        Image.asset('images/community13.png'),
                       ],
                     ),
                     SizedBox(
@@ -112,11 +101,11 @@ class Community3 extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
-                        _Community14(),
+                        Image.asset('images/community14.png'),
                         Column(
                           children: <Widget>[
-                            _Community15(),
-                            _Community16(),
+                            Image.asset('images/community15.png'),
+                            Image.asset('images/community16.png'),
                           ],
                         )
                       ],
@@ -125,8 +114,8 @@ class Community3 extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
-                        _Community17(),
-                        _Community18(),
+                        Image.asset('images/community17.png'),
+                        Image.asset('images/community18.png'),
                       ],
                     ),
                   ],
@@ -184,78 +173,4 @@ class Community3 extends StatelessWidget {
       ),
     );
   }
-}
-
-_Bar() {
-  AssetImage assetImage = AssetImage('images/bar.png');
-  Image image = Image(image: assetImage);
-  return image;
-}
-
-_Search2() {
-  AssetImage assetImage = AssetImage('images/search2.png');
-  Image image = Image(image: assetImage);
-  return image;
-}
-
-_RightArrow2() {
-  AssetImage assetImage = AssetImage('images/rightarrow2.png');
-  Image image = Image(image: assetImage);
-  return Container(
-    child: image,
-  );
-}
-
-_Community10() {
-  AssetImage assetImage = AssetImage('images/community10.png');
-  Image image = Image(image: assetImage);
-  return image;
-}
-
-_Community11() {
-  AssetImage assetImage = AssetImage('images/community11.png');
-  Image image = Image(image: assetImage);
-  return image;
-}
-
-_Community12() {
-  AssetImage assetImage = AssetImage('images/community12.png');
-  Image image = Image(image: assetImage);
-  return image;
-}
-
-_Community13() {
-  AssetImage assetImage = AssetImage('images/community13.png');
-  Image image = Image(image: assetImage);
-  return image;
-}
-
-_Community14() {
-  AssetImage assetImage = AssetImage('images/community14.png');
-  Image image = Image(image: assetImage);
-  return image;
-}
-
-_Community15() {
-  AssetImage assetImage = AssetImage('images/community15.png');
-  Image image = Image(image: assetImage);
-  return image;
-}
-
-_Community16() {
-  AssetImage assetImage = AssetImage('images/community16.png');
-  Image image = Image(image: assetImage);
-  return image;
-}
-
-_Community17() {
-  AssetImage assetImage = AssetImage('images/community17.png');
-  Image image = Image(image: assetImage);
-  return image;
-}
-
-_Community18() {
-  AssetImage assetImage = AssetImage('images/community18.png');
-  Image image = Image(image: assetImage);
-  return image;
 }

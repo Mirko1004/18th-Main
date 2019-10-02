@@ -34,7 +34,7 @@ drawProgressBarWork() {
                   ),
                   Text('3',
                       style:
-                      AppStyles.getSurannaStyle(29.0, 0.0, Colors.black)),
+                          AppStyles.getSurannaStyle(29.0, 0.0, Colors.black)),
                 ],
               ),
             ),
@@ -52,11 +52,10 @@ drawProgressBarWork() {
                   ),
                   Text('2',
                       style:
-                      AppStyles.getSurannaStyle(29.0, 0.0, Colors.black)),
+                          AppStyles.getSurannaStyle(29.0, 0.0, Colors.black)),
                 ],
               ),
             ),
-
             Positioned(
               left: 1.0,
               child: Stack(

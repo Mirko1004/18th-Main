@@ -2,17 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:todo_app_flutter/utils/app_colors.dart';
 import 'package:todo_app_flutter/utils/app_styles.dart';
 import 'package:todo_app_flutter/utils/app_Box_Decoration.dart';
+import 'package:todo_app_flutter/statistics/common/statistics_app_bar.dart';
 
 class StatisticsPutting extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        title: Text('STATISTICS',
-            style: AppStyles.getSurannaStyle(24.0, 0.0, AppColors.blackColor)),
-        leading: _BackArrow(),
-      ),
+      appBar: getDetailAppBar(context, ''),
       body: Container(
         height: 600.0,
         padding: EdgeInsets.only(left: 20.0, top: 30.0),
@@ -100,7 +96,7 @@ class StatisticsPutting extends StatelessWidget {
             SizedBox(height: 20.0),
             Padding(
               padding: EdgeInsets.only(top: 40.0,right:25.0),
-              child: _statisticsPutting(),
+              child: Image.asset('images/statistics_putting.png'),
             ),
             Expanded(
               child: Padding(
@@ -119,14 +115,3 @@ class StatisticsPutting extends StatelessWidget {
   }
 }
 
-_BackArrow() {
-  AssetImage assetImage = AssetImage('images/back_arrow.png');
-  Image image = Image(image: assetImage);
-  return image;
-}
-
-_statisticsPutting() {
-  AssetImage assetImage = AssetImage('images/statistics_putting.png');
-  Image image = Image(image: assetImage);
-  return image;
-}
