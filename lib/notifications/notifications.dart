@@ -1,37 +1,32 @@
 import 'package:flutter/material.dart';
 import '../utils/app_styles.dart';
 import '../utils/app_colors.dart';
-import '../utils/app_Box_Decoration.dart';
 
 class Notifications extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+          elevation: 0.0,
           backgroundColor: Colors.white,
           title: Text(
             'NOTIFICATIONS',
             style: AppStyles.getSurannaStyle(24.0, 0.0, AppColors.blackColor),
           ),
-          leading: Image(
-            image: AssetImage('images/back_arrow.png'),
-          )),
+          leading: Image.asset('images/back_arrow.png')),
       body: Container(
         color: Colors.white,
         child: Column(
           children: <Widget>[
             Container(
-              padding: EdgeInsets.only(left: 20.0, right: 20.0, top: 10.0),
+              padding: EdgeInsets.only(left: 30.0, right: 20.0, top: 10.0),
               color: AppColors.greyColor8,
               height: 140.0,
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
-                  Image(
-                    image: AssetImage('images/rings.png'),
-                  ),
+                  Image.asset('images/rings.png'),
                   Padding(
-                    padding: EdgeInsets.only(top: 10.0),
+                    padding: EdgeInsets.only(top: 10.0, left: 34.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
@@ -47,7 +42,7 @@ class Notifications extends StatelessWidget {
                                     0.0,
                                     AppColors.blackColor,
                                     FontWeight.w400)),
-                            Text(' 30 this sunday',
+                            Text(' \$30 this sunday',
                                 style: AppStyles.getSFUITextMediumStyle(
                                     16.0,
                                     0.0,
@@ -87,9 +82,7 @@ class Notifications extends StatelessWidget {
                                 ),
                               ),
                               SizedBox(width: 30.0),
-                              Image(
-                                image: AssetImage('images/right_arrow3.png'),
-                              )
+                              Image.asset('images/right_arrow3.png'),
                             ],
                           ),
                         ),
@@ -98,9 +91,7 @@ class Notifications extends StatelessWidget {
                         ),
                         Row(
                           children: <Widget>[
-                            Image(
-                              image: AssetImage('images/golf_flag.png'),
-                            ),
+                            Image.asset('images/golf_flag.png'),
                             SizedBox(
                               width: 20.0,
                             ),
@@ -114,11 +105,24 @@ class Notifications extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
-              padding: EdgeInsets.only(top: 5.0),
-              color: AppColors.greyColor6,
-              width: 315.0,
-              height: 1.5,
+            Stack(
+              children: <Widget>[
+                Container(
+                  padding: EdgeInsets.only(top: 5.0),
+                  color: AppColors.greyColor8,
+                  width: 425.0,
+                  height: 1.5,
+                ),
+                Positioned(
+                  left: 50.0,
+                  child: Container(
+                    padding: EdgeInsets.only(top: 5.0),
+                    color: AppColors.greyColor6,
+                    width: 315.0,
+                    height: 1.5,
+                  ),
+                ),
+              ],
             ),
             Container(
               color: AppColors.greyColor8,
@@ -128,9 +132,7 @@ class Notifications extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
-                    Image(
-                      image: AssetImage('images/women.png'),
-                    ),
+                    Image.asset('images/women.png'),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
@@ -156,9 +158,7 @@ class Notifications extends StatelessWidget {
                         SizedBox(height: 8.0),
                         Row(
                           children: <Widget>[
-                            Image(
-                              image: AssetImage('images/heart3.png'),
-                            ),
+                            Image.asset('images/heart3.png'),
                             SizedBox(width: 25.0),
                             Text('1 hour ago',
                                 style: AppStyles.getRobotoLightStyle(1.0)),
@@ -166,9 +166,7 @@ class Notifications extends StatelessWidget {
                         ),
                       ],
                     ),
-                    Image(
-                      image: AssetImage('images/small_tiger.png'),
-                    )
+                    Image.asset('images/small_tiger.png'),
                   ],
                 ),
               ),
@@ -176,41 +174,39 @@ class Notifications extends StatelessWidget {
             Container(
               height: 100.0,
               child: Padding(
-                padding: EdgeInsets.only(top: 20.0),
+                padding: EdgeInsets.only(top: 20.0, left: 34.0),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
-                    Image(
-                      image: AssetImage('images/women.png'),
-                    ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Row(
-                          children: <Widget>[
-                            Text('Congratulations! Your new GHIN ',
-                                style: AppStyles.getSFUITextMediumStyle(
-                                    16.0,
-                                    0.0,
-                                    AppColors.blackColor,
-                                    FontWeight.w500)),
-                          ],
-                        ),
-                        Text('Index',
-                            style: AppStyles.getSFUITextRegularStyle(16.0, 0.0,
-                                AppColors.blackColor, FontWeight.w400)),
-                        SizedBox(height: 8.0),
-                        Row(
-                          children: <Widget>[
-                            Image(
-                              image: AssetImage('images/champagne.png'),
-                            ),
-                            SizedBox(width: 25.0),
-                            Text('1 hour ago',
-                                style: AppStyles.getRobotoLightStyle(1.0)),
-                          ],
-                        ),
-                      ],
+                    Image.asset('images/women.png'),
+                    Padding(
+                      padding: EdgeInsets.only(left: 30.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Row(
+                            children: <Widget>[
+                              Text('Congratulations! Your new GHIN ',
+                                  style: AppStyles.getSFUITextMediumStyle(
+                                      16.0,
+                                      0.0,
+                                      AppColors.blackColor,
+                                      FontWeight.w500)),
+                            ],
+                          ),
+                          Text('Index',
+                              style: AppStyles.getSFUITextRegularStyle(16.0,
+                                  0.0, AppColors.blackColor, FontWeight.w400)),
+                          SizedBox(height: 8.0),
+                          Row(
+                            children: <Widget>[
+                              Image.asset('images/champagne.png'),
+                              SizedBox(width: 25.0),
+                              Text('1 hour ago',
+                                  style: AppStyles.getRobotoLightStyle(1.0)),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),

@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app_flutter/profileSetup/progress_bar.dart';
-import 'icons_male.dart';
-import 'take_photo.dart';
-import 'first_name.dart';
-import 'bio_bio.dart';
+import 'package:todo_app_flutter/profileSetup/icons_male.dart';
+import 'package:todo_app_flutter/profileSetup/take_photo.dart';
+import 'package:todo_app_flutter/profileSetup/first_name.dart';
+import 'package:todo_app_flutter/profileSetup/bio_bio.dart';
+import 'package:todo_app_flutter/utils/app_colors.dart';
 import 'package:todo_app_flutter/utils/app_colors.dart';
 import '../utils/app_styles.dart';
 import '../utils/app_Box_Decoration.dart';
+
 
 class Home extends StatelessWidget {
   @override
@@ -36,7 +38,7 @@ class Home extends StatelessWidget {
                   opacity: 0.1,
                   child: Padding(
                     padding: EdgeInsets.only(top: 46.0, bottom: 10.0),
-                    child: _Slika(),
+                    child: Image.asset('images/Shape.png')
                   ),
                 ),
                 Padding(
@@ -94,9 +96,9 @@ class Home extends StatelessWidget {
                     onTap: null,
                     child: Container(
                         width: 350.0,
-                        height: 50,
+                        height: 40,
                         decoration: new BoxDecoration(
-                          color: Colors.white,
+                          color: AppColors.lightWhite2,
                           border: new Border.all(
                               color: AppColors.orangeColor, width: 1.0),
                           borderRadius: new BorderRadius.horizontal(),
@@ -124,8 +126,4 @@ class Home extends StatelessWidget {
   }
 }
 
-_Slika() {
-  AssetImage assetImage = AssetImage('images/Shape.png');
-  Image image = Image(image: assetImage);
-  return image;
-}
+

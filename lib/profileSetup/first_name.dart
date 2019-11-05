@@ -13,6 +13,12 @@ firstName() {
                 decoration: InputDecoration(
                     enabledBorder: UnderlineInputBorder(
                         borderSide: BorderSide(color: AppColors.greyColor)),
+                    labelText: 'username',
+                    labelStyle: AppStyles.getSFUITextLight())),
+            TextField(
+                decoration: InputDecoration(
+                    enabledBorder: UnderlineInputBorder(
+                        borderSide: BorderSide(color: AppColors.greyColor)),
                     labelText: 'first name',
                     labelStyle: AppStyles.getSFUITextLight())),
             TextFormField(

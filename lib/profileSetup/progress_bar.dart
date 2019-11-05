@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app_flutter/utils/app_colors.dart';
-import '../utils/app_Box_Decoration.dart';
+import 'package:todo_app_flutter/utils/app_colors.dart';
 import '../utils/app_styles.dart';
+import '../utils/app_Box_Decoration.dart';
 
 drawProgressBar() {
   return Row(

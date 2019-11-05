@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home.dart';
+import 'package:todo_app_flutter/profileSetup/home.dart';
 
 void main() {
   runApp(MaterialApp(

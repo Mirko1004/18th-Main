@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'rsvpRow.dart';
+import 'package:todo_app_flutter/community/common/community_bottom_bar.dart';
 import 'package:todo_app_flutter/utils/app_colors.dart';
 import '../utils/app_styles.dart';
 import 'package:todo_app_flutter/community/common/community_app_bar.dart';
+import 'package:todo_app_flutter/community/calendar_card.dart';
 
-class Community2 extends StatelessWidget {
+class Community3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,104 +13,76 @@ class Community2 extends StatelessWidget {
       body: Container(
         color: Colors.white,
         child: SingleChildScrollView(
-          child: Padding(
-            padding: EdgeInsets.only(right: 20.0, left: 20.0, top: 20.0),
             child: Column(
-              children: <Widget>[
-                Padding(padding: EdgeInsets.only(top: 20.0)),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
-                    RichText(
-                        text: TextSpan(children: [
-                      TextSpan(
-                        text: 'CONNECTIONS          ',
-                        style: AppStyles.getSFUITextMediumStyle(
-                            16.0, 0.0, AppColors.lightBlack, FontWeight.w500),
-                      ),
-                      TextSpan(
-                        text: 'RSVP         ',
-                        style: AppStyles.getSFUITextMediumStyle(
-                            16.0, 0.0, AppColors.blackColor, FontWeight.w500),
-                      ),
-                      TextSpan(
-                        text: 'EXPLORE ',
-                        style: AppStyles.getSFUITextMediumStyle(
-                            16.0, 0.0, AppColors.lightBlack, FontWeight.w500),
-                      ),
-                    ])),
-                  ],
-                ),
-                Padding(
-                  padding: EdgeInsets.only(top: 10.0, right: 28.0),
-                  child: Container(
-                    width: 46.0,
-                    height: 2.0,
-                    decoration: BoxDecoration(
-                      color: AppColors.greenColor2,
-                    ),
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Padding(
+              padding: EdgeInsets.only(left: 15.0, right: 15.0, top: 40.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      RichText(
+                          text: TextSpan(children: [
+                        TextSpan(
+                          text: 'DISCOVER         ',
+                          style: AppStyles.getSFUITextMediumStyle(
+                              16.0, 0.0, AppColors.lightBlack, FontWeight.w500),
+                        ),
+                        TextSpan(
+                          text: 'CALENDAR        ',
+                          style: AppStyles.getSFUITextMediumStyle(16.0, 0.0,
+                              AppColors.blackColor4, FontWeight.w500),
+                        ),
+                        TextSpan(
+                          text: 'RSVP  ',
+                          style: AppStyles.getSFUITextMediumStyle(
+                              16.0, 0.0, AppColors.lightBlack, FontWeight.w500),
+                        ),
+                      ])),
+                    ],
                   ),
-                ),
-                Padding(padding: EdgeInsets.only(top: 30.0)),
-                Align(
-                  alignment: Alignment.topLeft,
-                  child: Text(
-                    'Recent invitations',
-                    style: AppStyles.getSFUITextLight2(),
-                  ),
-                ),
-                Padding(padding: EdgeInsets.only(top: 20.0)),
-                rsvpRow(),
-                Stack(
-                  children: <Widget>[
-                    Padding(
-                      padding: EdgeInsets.only(top: 160.0),
-                      child: Container(
-                        height: 1.0,
-                        decoration: BoxDecoration(
-                          color: AppColors.lightGrey,
+                  Stack(
+                    children: <Widget>[
+                      Padding(
+                        padding: EdgeInsets.only(top: 10.0),
+                        child: Container(
+                          height: 1.0,
+                          decoration: BoxDecoration(
+                            color: AppColors.lightGrey,
+                          ),
                         ),
                       ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(top: 160.0, left: 62.0),
-                      child: Container(
-                        width: 75.0,
-                        height: 2.0,
-                        decoration: BoxDecoration(
-                          color: AppColors.orangeColor,
+                      Padding(
+                        padding: EdgeInsets.only(top: 10.0, left: 111.0),
+                        child: Container(
+                          width: 88.0,
+                          height: 2.0,
+                          decoration: BoxDecoration(
+                            color: AppColors.greenColor2,
+                          ),
                         ),
                       ),
+                    ],
+                  ),
+                  SizedBox(height: 20.0),
+                  Text(
+                    'TODAY   TUE, 15 OCT 2019',
+                    style: AppStyles.getSurannaStyle(
+                      16.0,
+                      0.89,
+                      AppColors.blackColor4,
                     ),
-                  ],
-                ),
-              ],
+                  ),
+                  getCalendarCard(),
+                  Padding(padding: EdgeInsets.only(top: 20.0)),
+                ],
+              ),
             ),
-          ),
-        ),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: AppColors.lightWhite,
-        selectedItemColor: Colors.black,
-        unselectedItemColor: Colors.black,
-        type: BottomNavigationBarType.fixed,
-        items: [
-          BottomNavigationBarItem(
-              icon: ImageIcon(AssetImage('images/home2.png')),
-              title: Text('Home')),
-          BottomNavigationBarItem(
-              icon: ImageIcon(AssetImage('images/community2.png')),
-              title: Text('Community')),
-          BottomNavigationBarItem(
-              icon: ImageIcon(AssetImage('images/play.png')),
-              title: Text('Play')),
-          BottomNavigationBarItem(
-              icon: ImageIcon(AssetImage('images/proShop.png')),
-              title: Text('Pro Shop')),
-          BottomNavigationBarItem(
-              icon: ImageIcon(AssetImage('images/profile.png')),
-              title: Text('Profile')),
-        ],
+          ],
+        )),
       ),
     );
   }

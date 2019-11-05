@@ -15,7 +15,7 @@ drawProgressBarWork() {
                 padding: EdgeInsets.all(23.0),
                 child: Container(
                   color: AppColors.orangeColor,
-                  height: 2.0,
+                  height: 1.0,
                 ),
               ),
             ),
@@ -26,15 +26,15 @@ drawProgressBarWork() {
                 children: <Widget>[
                   ClipOval(
                     child: Container(
-                      height: 40.0, // height of the button
-                      width: 40.0,
+                      height: 32.0, // height of the button
+                      width: 32.0,
                       alignment: AlignmentDirectional.center,
                       decoration: AppDecoration.borderBarRadius,
                     ),
                   ),
                   Text('3',
                       style:
-                          AppStyles.getSurannaStyle(29.0, 0.0, Colors.black)),
+                          AppStyles.getSurannaStyle(23.0, 0.0, Colors.black)),
                 ],
               ),
             ),
@@ -45,14 +45,14 @@ drawProgressBarWork() {
                 children: <Widget>[
                   ClipOval(
                     child: Container(
-                        height: 40.0, // height of the button
-                        width: 40.0,
+                        height: 32.0, // height of the button
+                        width: 32.0,
                         alignment: AlignmentDirectional.center,
                         decoration: AppDecoration.borderBarRadius),
                   ),
                   Text('2',
                       style:
-                          AppStyles.getSurannaStyle(29.0, 0.0, Colors.black)),
+                          AppStyles.getSurannaStyle(23.0, 0.0, Colors.black)),
                 ],
               ),
             ),
@@ -63,8 +63,8 @@ drawProgressBarWork() {
                 children: <Widget>[
                   ClipOval(
                     child: Container(
-                      height: 40.0, // height of the button
-                      width: 40.0,
+                      height: 32.0, // height of the button
+                      width: 32.0,
                       alignment: AlignmentDirectional.center,
                       decoration: new BoxDecoration(
                           color: AppColors.greenColor,
@@ -77,7 +77,7 @@ drawProgressBarWork() {
                   ),
                   Text('1',
                       style: AppStyles.getSurannaStyle(
-                          29.0, 0.0, AppColors.lightWhite2)),
+                          23.0, 0.0, AppColors.lightWhite2)),
                 ],
               ),
             ),

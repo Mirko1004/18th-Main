@@ -12,7 +12,7 @@ class Home3 extends StatelessWidget {
         backgroundColor: Colors.white,
         title: Text('INTERESTS',
             style: AppStyles.getSurannaStyle(24.0, 1.0, AppColors.blackColor)),
-        leading: _BackArrow(),
+        leading: Image.asset('images/back_arrow.png'),
       ),
       body: SingleChildScrollView(
         child: Container(
@@ -39,20 +39,20 @@ class Home3 extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         Expanded(
-                          child: _Slika8(),
+                          child: Image.asset('images/golf10.png'),
                         ),
                         Expanded(
-                          child: _Slika9(),
+                          child: Image.asset('images/tennis10.png'),
                         )
                       ],
                     ),
                     Row(
                       children: <Widget>[
                         Expanded(
-                          child: _Slika10(),
+                          child: Image.asset('images/swimming10.png'),
                         ),
                         Expanded(
-                          child: _Slika11(),
+                          child: Image.asset('images/fitness10.png'),
                         )
                       ],
                     ),
@@ -64,7 +64,7 @@ class Home3 extends StatelessWidget {
                 onTap: null,
                 child: Container(
                     width: 315.0,
-                    height: 50,
+                    height: 40,
                     decoration: new BoxDecoration(
                       color: Colors.white,
                       border: new Border.all(
@@ -89,34 +89,4 @@ class Home3 extends StatelessWidget {
       ),
     );
   }
-}
-
-_BackArrow() {
-  AssetImage assetImage = AssetImage('images/back_arrow.png');
-  Image image = Image(image: assetImage);
-  return image;
-}
-
-_Slika8() {
-  AssetImage assetImage = AssetImage('images/golf10.png');
-  Image image = Image(image: assetImage);
-  return image;
-}
-
-_Slika9() {
-  AssetImage assetImage = AssetImage('images/tennis10.png');
-  Image image = Image(image: assetImage);
-  return image;
-}
-
-_Slika10() {
-  AssetImage assetImage = AssetImage('images/swimming10.png');
-  Image image = Image(image: assetImage);
-  return image;
-}
-
-_Slika11() {
-  AssetImage assetImage = AssetImage('images/fitness10.png');
-  Image image = Image(image: assetImage);
-  return image;
 }

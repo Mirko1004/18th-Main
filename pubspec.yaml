@@ -16,6 +16,11 @@ dependencies:
   cupertino_icons: ^0.1.2
   rxdart:
   dots_indicator: ^1.0.0
+  table_calendar: ^2.1.0
+  flutter_calendar_carousel: ^1.4.4
+
+
+
 
 
 dev_dependencies:
@@ -43,17 +48,17 @@ flutter:
     - images/back_arrow.png
     - images/search.png
     - images/location.png
-    - images/golfclub1.png
+    - images/golf_club10.png
     - images/star.png
     - images/hole.png
-    - images/golf_club2.png
+    - images/golf_club11.png
     - images/golf.png
     - images/tennis.png
     - images/swimming.png
     - images/fitness.png
-    - images/golf_club3.png
-    - images/golf_club4.png
-    - images/golf_club5.png
+    - images/golf_club12.png
+    - images/golf_club13.png
+    - images/golf_club14.png
     - images/mask.png
     - images/slika30.png
     - images/slika31.png
@@ -137,6 +142,99 @@ flutter:
     - images/small_tiger.png
     - images/heart3.png
     - images/champagne.png
+    - images/profile_black.png
+    - images/ryan_best.png
+    - images/profile_completeless.png
+    - images/highlights12.png
+    - images/right_arrow4.png
+    - images/right_arrow5.png
+    - images/right_arrow6.png
+    - images/right_arrow7.png
+    - images/background_golf.png
+    - images/bar2.png
+    - images/play_black.png
+    - images/white_golf_flag.png
+    - images/black_golf_flag.png
+    - images/white_hole.png
+    - images/black_hole.png
+    - images/plus.png
+    - images/on_off.png
+    - images/black_cube.png
+    - images/ryan_best2.png
+    - images/add_player.png
+    - images/minus.png
+    - images/green_plus.png
+    - images/shopping_cart.png
+    - images/black_pro_shop.png
+    - images/brand_adidas.png
+    - images/brand_nike.png
+    - images/brand_oakley.png
+    - images/brand_18thandmain.png
+    - images/brand_callaway.png
+    - images/oakley_holbrook.png
+    - images/taylormade_classic.png
+    - images/cobra_fmax.png
+    - images/shoes.png
+    - images/t-shirt1.png
+    - images/t-shirt2.png
+    - images/t-shirt3.png
+    - images/t-shirt4.png
+    - images/t-shirt_nike.png
+    - images/gloves_oakley.png
+    - images/gfore_cap.png
+    - images/callaway_bat.png
+    - images/shorts_ralph_lauren.png
+    - images/shoes_callaway.png
+    - images/shoes_doccus.png
+    - images/shoes_nike.png
+    - images/shoes_puma.png
+    - images/pants_puma.png
+    - images/pants_nike.png
+    - images/pants_nike2.png
+    - images/pants_adidas.png
+    - images/pants_adidas2.png
+    - images/pants_small.png
+    - images/callaway2.png
+    - images/callaway_balls.png
+    - images/oglethorpe_gold.png
+    - images/blue_pants.png
+    - images/shop_cart1.png
+    - images/blue_circle.png
+    - images/blue_circle_empty.png
+    - images/red_circle.png
+    - images/white_circle.png
+    - images/black_circle.png
+    - images/size_xs.png
+    - images/size_s.png
+    - images/size_m.png
+    - images/size_m2.png
+    - images/size_l.png
+    - images/video_play.png
+    - images/small_callaway_bat.png
+    - images/seen_icon.png
+    - images/black_phone.png
+    - images/black_mail.png
+    - images/black_chat.png
+    - images/sun.png
+    - images/golf_image.png
+    - images/slide.png
+    - images/clear.png
+    - images/search10.png
+    - images/cooking.png
+    - images/scuba_diving.png
+    - images/playing_golf.png
+    - images/dine_out.png
+    - images/image_golf.png
+    - images/water.png
+    - images/balons.png
+    - images/arrow_down.png
+    - images/bruce_willis.png
+    - images/benny_moore.png
+    - images/amy_vernon.png
+    - images/edit_button.png
+    - images/edit_pencil.png
+    - images/beauty2.png
+    - images/selected_circle.png
 
 
 

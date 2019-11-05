@@ -101,25 +101,10 @@ progressBar4() {
                 ],
               ),
             ),
-            Positioned(
-              right: 1.0,
-              child: InkWell(
-                onTap: null,
-                child: Container(
-                    width: 161.0,
-                    height: 26.0,
-                    decoration: new BoxDecoration(
-                      color: Colors.white,
-                      border: new Border.all(
-                          color: AppColors.orangeColor, width: 1.0),
-                      borderRadius: new BorderRadius.horizontal(),
-                    ),
-                    child: Center(
-                      child: Text('follow 3 and continue',
-                          style: AppStyles.getSFUITextMediumStyle(14.0, 0.0, AppColors.greenColor, FontWeight.w500)),
-                    )),
-              ),
-            ),
+            Padding(padding: EdgeInsets.only(left:240.0),
+            child:Text('Almost done!',
+                style: AppStyles.getSFUITextRegularStyle(16.0, 0.0, AppColors.greenColor3, FontWeight.w400)),)
+
           ],
         ),
       ),

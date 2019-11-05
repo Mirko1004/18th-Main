@@ -17,11 +17,22 @@ class AppStyles {
         letterSpacing: letterSpacing);
   }
 
+  static getSurannaStyle2(
+      double fontSize, double letterSpacing, Color color, double height) {
+    return TextStyle(
+      fontFamily: 'Suranna-Regular',
+      color: color,
+      fontSize: fontSize,
+      letterSpacing: letterSpacing,
+      height: height,
+    );
+  }
+
   static getSFUITextLightStyle(
       double fontSize, Color color, FontWeight fontWeight) {
     return TextStyle(
       fontWeight: fontWeight,
-      fontFamily: 'SFUIText-Light',
+      fontFamily: 'SFUIText-Light.ttf',
       color: color,
       fontSize: fontSize,
     );
@@ -68,6 +79,25 @@ class AppStyles {
     );
   }
 
+  static getRobotoLightStyle2(double height) {
+    return TextStyle(
+      height: height,
+      fontWeight: FontWeight.w300,
+      fontFamily: 'Roboto-Light.ttf',
+      color: AppColors.darkGrey,
+      fontSize: 14.0,
+    );
+  }
+
+  static getRobotoMediumStyle() {
+    return TextStyle(
+      fontWeight: FontWeight.w500,
+      fontFamily: 'Roboto-Medium.ttf',
+      color: Colors.black,
+      fontSize: 16.0,
+    );
+  }
+
   static getSFUITextLight() {
     return TextStyle(
       fontWeight: FontWeight.w300,
@@ -95,11 +125,22 @@ class AppStyles {
     );
   }
 
+  static getSFUITextLight3() {
+    return TextStyle(
+      letterSpacing: -0.01,
+      fontWeight: FontWeight.w300,
+      fontFamily: 'SFUIText-Light.ttf',
+      color: Colors.black,
+      fontSize: 16.0,
+    );
+  }
+
   static getBottomBox() {
     return TextStyle(
         fontFamily: 'Suranna-Regular',
         color: AppColors.greenColor,
         fontSize: 22.0,
-        letterSpacing: 1.52);
+        letterSpacing: 1.38,
+        height: 1.8);
   }
 }
